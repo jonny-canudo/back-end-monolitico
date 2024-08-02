@@ -11,7 +11,20 @@ if ($acao == "CADASTRAR") {
     $dao = new CadastroDAO();
     $dao->CADASTRAR($dcemail, $dcsenha);
     
-
-   
 }
+echo "chegou aqui";
+exit();
+
+
+
+/*else {
+    header("Location: http://localhost/");
+    exit();
+}
+*/
+
+
+
+
+
 ?>
