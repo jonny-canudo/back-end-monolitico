@@ -43,7 +43,7 @@ $_SESSION["logado"] = -1;
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td><input type="submit" name="btnLogin" id="btnLogin" value="CADASTRAR"></td>
+                <td><input type="submit" name="btnCadastrar" id="btnCadastrar" value="CADASTRAR"></td>
             </tr>
         </table>
     </div>

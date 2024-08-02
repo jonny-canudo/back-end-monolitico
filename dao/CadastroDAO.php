@@ -1,13 +1,12 @@
 <?php
 
 require_once("../util/DataSource.php");
-    echo "chegou";
-    exit();
+   
 
     class CadastroDAO {
         
-        public function cadastrar($email, $senha) {
-        $str = "INSERT INTO tblusuario (dcemail, dcsenha) VALUES (?, ?)";
+        public function CADASTRAR($email, $senha) {
+        $str = "INSERT INTO tblusuario (dcemail, dcsenha) VALUES ('".$email."' '".$senha."'";
 
 
         $dt = new DataSource();
@@ -17,7 +16,7 @@ require_once("../util/DataSource.php");
         $rS = mysqli_query($conn, $str);
 
        
-        header("Location: http://localhost");
+        header("Location: http://localhost/");
         exit();
     }
 
