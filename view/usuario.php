@@ -54,6 +54,8 @@ $listaUsuarios = $_SESSION['listaUsuarios'];
                         <tr>
                             <td align="center">Nome</td>
                             <td align="center">Email</td>
+                            <td align="center">Senha</td>
+                            
                             <td align="center">&nbsp;</td>
                         </tr>
                         <?php 
@@ -61,6 +63,8 @@ $listaUsuarios = $_SESSION['listaUsuarios'];
                                 echo "<tr>";
                                     echo "<td>".$i_usuario['dcnome']."</td>";
                                     echo "<td>".$i_usuario['dcemail']."</td>";
+                                    echo "<td>".$i_usuario['dcsenha']."</td>";
+
                                     echo "<td><a href='/controllers/usuarioController.php?acao=deletar&cod=".$i_usuario['cousuario']."'>X</a></td>";
                                 echo "</tr>";  
                             }

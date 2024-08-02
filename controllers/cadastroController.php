@@ -3,25 +3,24 @@
 require_once("../dao/CadastroDAO.php");
 
 
-if ($acao == "CADASTRAR") {
-    
+if ($acao == "incluir") {
+
+
+
+    $dcnome = $_POST['dcnome'];
     $dcemail = $_POST['dcemail'];
-    $dcsenha = $_POST['dcsenha'];
-    
+    $dcsenha = $_POST['dcsenha']; 
+
     $dao = new CadastroDAO();
-    $dao->CADASTRAR($dcemail, $dcsenha);
+    $dao->incluir( $dcnome, $dcemail, $dcsenha,'0', now());
     
 }
-echo "chegou aqui";
-exit();
+ 
 
-
-
-/*else {
+else {
     header("Location: http://localhost/");
     exit();
 }
-*/
 
 
 

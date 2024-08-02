@@ -66,7 +66,7 @@ $listaTrabalho = $_SESSION['listaTrabalho'];
                                     echo "<td>".$i_dctrabalho['dclocaltrabalho']."</td>";
                                     echo "<td>".$i_dctrabalho['dcsalario']."</td>";
                                     
-                                    echo "<td><a href='/controllers/ufController.php?acao=deletar&cod=".$i_dctrabalho['cotrabalho']."'>X</a></td>";
+                                    echo "<td><a href='/controllers/trabalhoController.php?acao=deletar&cod=".$i_dctrabalho['cotrabalho']."'>X</a></td>";
                                 echo "</tr>";  
                             }
                         ?>
