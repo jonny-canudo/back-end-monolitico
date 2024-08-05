@@ -7,8 +7,17 @@ $_SESSION["logado"] = -1;
 
 <html>
 <body>
+    <br><br><br>
 
-<form method="post" action="controllers/loginController.php">
+<div align="center" >
+
+<tr>
+    <td><a href="view/carro.php"action="">CADASTRE O SEU VEÍCULO</a></td>
+</tr>
+
+</div>
+
+<form method="post" action="../controllers/loginController.php">
     <br><br><br><br><br><br><br><br><br><br>
     <div align="center" >
         <table>

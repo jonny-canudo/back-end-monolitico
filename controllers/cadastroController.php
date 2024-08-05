@@ -17,10 +17,8 @@ if ($acao == "incluir") {
     $dao->incluir($dcnome, $dcemail, $dcsenha);
     
 }
- 
-
-else {
-    header("Location: http://localhost/");
+ else {
+    header("Location: http://localhost/view/index.php");
     exit();
 }
 
