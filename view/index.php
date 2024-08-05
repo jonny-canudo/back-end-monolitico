@@ -32,6 +32,7 @@ $_SESSION["logado"] = -1;
 <br>
 <form method="post" action="controllers/cadastroController.php"> 
     <div align="center" >
+    <input type='hidden' name="acao" id=acao value='incluir'>
         <table>
         <tr>
                 <td>Nome</td>
