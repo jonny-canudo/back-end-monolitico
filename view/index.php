@@ -15,10 +15,18 @@ $_SESSION["logado"] = -1;
     <td><a href="view/carro.php"action="">CADASTRE O SEU VEÍCULO</a></td>
 </tr>
 
+<br><br>
+<br><br>
 </div>
 
+<div align="center" >
+<tr>
+    <td><a href="view/tornesemembro.php"action="">Torne-se um Membro</a></td>
+</tr>
+
+</div>
 <form method="post" action="../controllers/loginController.php">
-    <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
     <div align="center" >
         <table>
             <tr>

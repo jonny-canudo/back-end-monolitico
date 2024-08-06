@@ -54,8 +54,11 @@ $listaDadosCarro = $_SESSION['listaDadosCarro'];
                         <tr>
                             <td align="center">Modelo</td>
                             <td align="center">Marca</td>
-                            <td align="center">Data de fabricação</td>
-                            
+                            <td align="center">Dt de Fabricação</td>
+                            <td align="center">Cor do Carro</td>
+                            <td align="center">Valor Tabela fip</td>
+                            <td align="center">Data de Compra</td>
+
                             <td align="center">&nbsp;</td>
                         </tr>
                         <?php 
@@ -64,6 +67,10 @@ $listaDadosCarro = $_SESSION['listaDadosCarro'];
                                     echo "<td>".$i_dadoscarro['dcmodelo']."</td>";
                                     echo "<td>".$i_dadoscarro['dcmarca']."</td>";
                                     echo "<td>".$i_dadoscarro['dtfabricacao']."</td>";
+                                    echo "<td>".$i_dadoscarro['dccor']."</td>";
+                                    echo "<td>".$i_dadoscarro['dcpreco']."</td>";
+                                    echo "<td>".$i_dadoscarro['dtcompra']."</td>";
+
 
                                     echo "<td><a href='/controllers/dadoscarroController.php?acao=deletar&cod=".$i_dadoscarro['cocarro']."'>X</a></td>";
                                 echo "</tr>";  
