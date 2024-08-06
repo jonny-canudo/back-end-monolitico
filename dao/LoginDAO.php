@@ -4,8 +4,9 @@ require_once("../util/DataSource.php");
 
 class LoginDAO {
 
-    public function logar($email, $senha) {
-        $str = "select cousuario from tblusuario where dcemail = '".$email."' and dcsenha = '".$senha."'";
+    public function logar($to) {
+      
+        $str = "select cousuario from tblusuario where dcemail = '".$to->getUsuario()."' and dcsenha = '".$to->getSenha()."'";
 
         $dt = new DataSource();
 
