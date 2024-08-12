@@ -1,5 +1,6 @@
 <?php
 
+require_once("../to/CadastroTO.php");
 require_once("../dao/CadastroDAO.php");
 
 
